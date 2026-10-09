@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# Except these three files
+!.gitignore
+!device9_top_20_features.csv
+!DiCE.ipynb
+!mems_dataset.csv
