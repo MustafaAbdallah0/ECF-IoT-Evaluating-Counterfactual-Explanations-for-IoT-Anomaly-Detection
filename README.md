@@ -4,7 +4,7 @@ Code, data and results for the paper
 
 > **Evaluating Counterfactual Explanations for IoT Anomaly Detection: A Comparative Study**
 > Joseph Rizzo and Mustafa Abdallah, Purdue University (corresponding author: M. Abdallah).
-> Paper: [`paper/Counterfactual_Explanations_IoT_Rizzo_Abdallah.pdf`](paper/Counterfactual_Explanations_IoT_Rizzo_Abdallah.pdf)
+
 
 Explainable-AI methods such as SHAP, LIME, Anchor and RuleFit tell an operator *why* a model flagged an IoT device, but not *what would
 have to change* for it to look normal. Counterfactual explanations answer the second question. This project compares two counterfactual
