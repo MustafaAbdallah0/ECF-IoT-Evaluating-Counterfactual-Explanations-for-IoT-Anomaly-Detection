@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Effect of the classifier on DiCE (N-BaIoT, the same 45 held-out instances, stratified over attack types). The Random Forest is the classifier used with DiCE in the main experiments; the MLP is the classifier used with Alibi-Explain. Validity is the fraction of three requested counterfactuals that flip the prediction (95\% bootstrap confidence interval).}
+\label{tab:ext-clf}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}l c@{}}
+\toprule
+\textbf{Method / classifier} & \textbf{Validity [95\% CI]} \\
+\midrule
+DiCE on Random Forest & 0.37 [0.25, 0.50] \\
+DiCE on MLP & 0.98 [0.93, 1.00] \\
+Alibi-Explain on MLP & 0.70 [0.57, 0.81] \\
+\bottomrule
+\end{tabular}
+\end{table}

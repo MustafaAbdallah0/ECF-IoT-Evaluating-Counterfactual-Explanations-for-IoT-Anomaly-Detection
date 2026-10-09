@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{Paired comparison of DiCE (restricted features) and Alibi-Explain on the same instances and the same MLP. Entries are the mean difference (DiCE $-$ Alibi-Explain) with a 95\% bootstrap confidence interval, and the Holm-adjusted $p$-value of a two-sided Wilcoxon signed-rank test over six comparisons per dataset. ``Valid and plausible'' is the fraction of the three requested counterfactuals that are both valid and accepted by the detector. Proximity and sparsity use only instances for which both methods returned a valid counterfactual (MEMS: 96; N-BaIoT: 66).}
+\label{tab:ext-tests}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}l cc cc@{}}
+\toprule
+ & \multicolumn{2}{c}{\textbf{MEMS} ($n=100$)} & \multicolumn{2}{c}{\textbf{N-BaIoT} ($n=80$)} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+\textbf{Metric} & Difference [95\% CI] & $p_{\mathrm{Holm}}$ & Difference [95\% CI] & $p_{\mathrm{Holm}}$ \\
+\midrule
+Validity & +0.04 [-0.01, +0.08] & 0.143 & +0.27 [+0.19, +0.36] & $<$0.001 \\
+Proximity (L1) & +0.138 [+0.120, +0.155] & $<$0.001 & -0.163 [-0.251, -0.078] & 0.005 \\
+Sparsity (pct. points) & -32.8 [-38.0, -27.5] & $<$0.001 & -34.1 [-37.8, -30.3] & $<$0.001 \\
+Valid and plausible (IF) & -0.17 [-0.26, -0.09] & $<$0.001 & +0.00 [+0.00, +0.00] & 1.000 \\
+Valid and plausible (LOF) & -0.28 [-0.36, -0.20] & $<$0.001 & +0.00 [+0.00, +0.00] & 1.000 \\
+Valid and plausible (kNN) & -0.26 [-0.34, -0.19] & $<$0.001 & +0.00 [+0.00, +0.00] & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table*}

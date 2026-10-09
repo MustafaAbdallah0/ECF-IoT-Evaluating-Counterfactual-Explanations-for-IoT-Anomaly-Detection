@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{Plausibility of valid counterfactuals under three detectors (\% accepted; IF: IsolationForest, LOF: Local Outlier Factor, kNN: distance to the fifth nearest benign neighbor). Each detector is fitted on benign training rows and its 5\% rejection threshold is calibrated on held-out benign rows. The last two rows show the acceptance rate of the original anomalous instances and of held-out benign rows.}
+\label{tab:ext-plaus}
+\scriptsize
+\setlength{\tabcolsep}{2.6pt}
+\begin{tabular}{@{}l ccc ccc@{}}
+\toprule
+ & \multicolumn{3}{c}{\textbf{MEMS}} & \multicolumn{3}{c}{\textbf{N-BaIoT}} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+\textbf{Method} & IF & LOF & kNN & IF & LOF & kNN \\
+\midrule
+DiCE (restricted) & 72.4 & 66.0 & 66.7 & 0.0 & 0.0 & 0.0 \\
+DiCE (all features) & 63.0 & 59.0 & 57.3 & 0.0 & 0.0 & 0.0 \\
+Alibi-Explain & 92.8 & 97.9 & 96.9 & 0.0 & 0.0 & 0.0 \\
+Growing Spheres & 97.0 & 96.3 & 96.7 & 0.0 & 0.0 & 0.0 \\
+FACE-style graph & 99.3 & 100.0 & 100.0 & 1.2 & 67.1 & 1.2 \\
+\midrule
+Original anomalies (baseline) & 95.0 & 66.0 & 72.0 & 0.0 & 12.5 & 0.0 \\
+Held-out benign (reference) & 94.9 & 94.9 & 94.9 & 99.6 & 99.8 & 99.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
